@@ -7,7 +7,7 @@ $clr-cyan: hsl(184, 100%, 22%);
 $clr-cyan-dark: hsl(179, 100%, 13%);
 
 // Fonts
-$font-heading: "Big Shoulders Display", cursive;
+$font-heading: "Big Shoulders Display", sans-serif;
 $font-weight-heading: 700;
 $font-body: "Lexend Deca", sans-serif;
 $font-weight-body: 400;
@@ -32,6 +32,7 @@ body {
 
 body {
   -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
 }
 
 // Global Styles
@@ -45,12 +46,85 @@ h5 {
 }
 
 p,
-span {
+span,
+a {
   font-family: $font-body;
   font-weight: $font-weight-body;
 }
 
 // Main Styles
+body {
+  padding: 3rem 1.5rem;
+}
+
+.card__container {
+  padding: 2.5rem 3rem;
+
+  &-sedans-card {
+    background-color: $clr-orange;
+    // Curve the top L/R borders as it is top of stack on mobile
+    // This is then overridden via media queries on desktop
+    border-radius: 10px 10px 0 0;
+  }
+
+  &-suvs-card {
+    background-color: $clr-cyan;
+  }
+
+  &-luxury-card {
+    background-color: $clr-cyan-dark;
+    // Curve the bottom L/R borders as it is bottom of stack on mobile
+    // This is then overridden via media queries on desktop.
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.card__icon {
+  width: 20%;
+}
+
+.card__heading {
+  color: $clr-grey;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 1rem 0 0 0;
+}
+
+.card__copy {
+  color: $clr-white;
+  padding: 1rem 0 1.4rem 0;
+  font-size: 15px;
+}
+
+.card__btn {
+  display: block;
+  width: fit-content;
+  background-color: $clr-grey;
+  // This ensures that the element background won't overlap the border box and double up
+  background-clip: padding-box;
+  border: 2px solid $clr-grey;
+  border-radius: 30px;
+  padding: 0.6rem 1.8rem;
+  text-decoration: none;
+  box-shadow: 0 1px 1px rgba(black, 0.025), 0 2px 2px rgba(black, 0.05);
+
+  &-sedans {
+    color: $clr-orange;
+  }
+
+  &-suvs {
+    color: $clr-cyan;
+  }
+
+  &-luxury {
+    color: $clr-cyan-dark;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: $clr-white;
+  }
+}
 
 // Media Queries
 @import "mediaqry";

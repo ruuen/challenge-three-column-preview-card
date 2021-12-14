@@ -15,6 +15,7 @@ body {
 
 body {
   -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
 }
 
 h1,
@@ -22,12 +23,74 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
   font-weight: 700;
 }
 
 p,
-span {
+span,
+a {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
+}
+
+body {
+  padding: 3rem 1.5rem;
+}
+
+.card__container {
+  padding: 2.5rem 3rem;
+}
+.card__container-sedans-card {
+  background-color: #e38826;
+  border-radius: 10px 10px 0 0;
+}
+.card__container-suvs-card {
+  background-color: #006970;
+}
+.card__container-luxury-card {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+
+.card__icon {
+  width: 20%;
+}
+
+.card__heading {
+  color: #f2f2f2;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 1rem 0 0 0;
+}
+
+.card__copy {
+  color: rgba(255, 255, 255, 0.75);
+  padding: 1rem 0 1.4rem 0;
+  font-size: 15px;
+}
+
+.card__btn {
+  display: block;
+  width: fit-content;
+  background-color: #f2f2f2;
+  background-clip: padding-box;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+  padding: 0.6rem 1.8rem;
+  text-decoration: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.025), 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+.card__btn-sedans {
+  color: #e38826;
+}
+.card__btn-suvs {
+  color: #006970;
+}
+.card__btn-luxury {
+  color: #004241;
+}
+.card__btn:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
 }
