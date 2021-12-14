@@ -1,0 +1,56 @@
+// Variables
+// Colours
+$clr-grey: hsl(0, 0%, 95%);
+$clr-white: hsla(0, 0%, 100%, 0.75);
+$clr-orange: hsl(31, 77%, 52%);
+$clr-cyan: hsl(184, 100%, 22%);
+$clr-cyan-dark: hsl(179, 100%, 13%);
+
+// Fonts
+$font-heading: "Big Shoulders Display", cursive;
+$font-weight-heading: 700;
+$font-body: "Lexend Deca", sans-serif;
+$font-weight-body: 400;
+
+// Device Breakpoints
+
+// Resets
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+// Global Styles
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-heading;
+  font-weight: $font-weight-heading;
+}
+
+p,
+span {
+  font-family: $font-body;
+  font-weight: $font-weight-body;
+}
+
+// Main Styles
+
+// Media Queries
+@import "mediaqry";

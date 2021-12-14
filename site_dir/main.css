@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+p,
+span {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
