@@ -1,0 +1,55 @@
+@media screen and (min-width: 850px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page__container {
+    display: flex;
+    min-width: 800px;
+    max-width: 65%;
+  }
+
+  .card__container {
+    // Flex the cards and match height of parent container
+    // This will then allow margin-top to be used on all .card__btn elems to force their position towards bottom
+    // Any text wrapping will then not cause misalignment of the buttons
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem 3rem;
+    &-sedans-card {
+      // Change curve of border to left side corners only
+      border-radius: 10px 0 0 10px;
+    }
+
+    &-luxury-card {
+      // Change curve of border to right side corners only
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+  .card__icon {
+    width: 30%;
+  }
+
+  .card__heading {
+    padding: 1.5rem 0 0 0;
+    font-size: 2.5em;
+  }
+
+  .card__copy {
+    padding: 1rem 0 5rem 0;
+  }
+
+  .card__btn {
+    margin-top: auto;
+  }
+}
