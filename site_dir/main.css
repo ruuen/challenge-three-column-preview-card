@@ -39,19 +39,22 @@ body {
   background-color: #f2f2f2;
 }
 
+.page__container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .card__container {
   padding: 2.5rem 3rem;
 }
 .card__container-sedans-card {
   background-color: #e38826;
-  border-radius: 10px 10px 0 0;
 }
 .card__container-suvs-card {
   background-color: #006970;
 }
 .card__container-luxury-card {
   background-color: #004241;
-  border-radius: 0 0 10px 10px;
 }
 
 .card__icon {
@@ -120,12 +123,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 3.5rem 3rem;
-  }
-  .card__container-sedans-card {
-    border-radius: 10px 0 0 10px;
-  }
-  .card__container-luxury-card {
-    border-radius: 0 10px 10px 0;
   }
 
   .card__icon {

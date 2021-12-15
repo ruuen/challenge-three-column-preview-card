@@ -56,14 +56,16 @@ body {
   background-color: $clr-grey;
 }
 
+.page__container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .card__container {
   padding: 2.5rem 3rem;
 
   &-sedans-card {
     background-color: $clr-orange;
-    // Curve the top L/R borders as it is top of stack on mobile
-    // This is then overridden via media queries on desktop
-    border-radius: 10px 10px 0 0;
   }
 
   &-suvs-card {
@@ -72,9 +74,6 @@ body {
 
   &-luxury-card {
     background-color: $clr-cyan-dark;
-    // Curve the bottom L/R borders as it is bottom of stack on mobile
-    // This is then overridden via media queries on desktop.
-    border-radius: 0 0 10px 10px;
   }
 }
 

@@ -25,15 +25,6 @@
     display: flex;
     flex-direction: column;
     padding: 3.5rem 3rem;
-    &-sedans-card {
-      // Change curve of border to left side corners only
-      border-radius: 10px 0 0 10px;
-    }
-
-    &-luxury-card {
-      // Change curve of border to right side corners only
-      border-radius: 0 10px 10px 0;
-    }
   }
 
   .card__icon {

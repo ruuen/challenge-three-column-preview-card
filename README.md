@@ -105,6 +105,8 @@ I was then able to resolve with the below solution:
 - Set card `height: 100%` to force matching of container height
 - Applied `margin-top: auto` on the card buttons to force them down to bottom of the container, resolving the problem.
 
+Thanks to [@Robert-Rynard](https://www.frontendmentor.io/profile/Robert-Rynard) on Frontend Mentor for suggesting a better solution for the border curvature. I have now moved to applying `border-radius: 10px` and `overflow: hidden` to the `.page__container` card parent element, rather than specifying different radius values for the first and last card (which then needed adjustment in media query).
+
 ## Author
 
 - Frontend Mentor - [@ruuendigital](https://www.frontendmentor.io/profile/ruuendigital)
