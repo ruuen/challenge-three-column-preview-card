@@ -16,8 +16,6 @@ This is Max Ruuen's solution to the [3-column preview card component challenge o
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
